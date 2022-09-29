@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U2-W5-D4 | ESERCIZIO</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/7b501ddc7c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- <div id="menu-dropdown"></div> -->
+    <div id="push-buttons">
+        <button><i class="fa-solid fa-bold"></i></button>
+        <button><i class="fa-solid fa-italic"></i></button>
+        <button><i class="fa-solid fa-underline"></i></button>
+        <button><i class="fa-solid fa-arrows-up-down"></i></button>
+        <button><i class="fa-solid fa-down-left-and-up-right-to-center"></i></button>
+        <button>colorize</button>
+        <button>Reset</button>
+    </div>
+    <div id="box_to-do-list">
+        <input onkeydown="getAndAddInputToList(event)" type="text" id="input-text"
+            placeholder="Aggiungi un elemento e premi invio...">
+        <button onclick="getAndAddInputToList(event)">Aggiungi promemoria</button>
+        <ul id="do-to-list"></ul>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
